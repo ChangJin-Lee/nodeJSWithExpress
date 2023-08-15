@@ -8,3 +8,7 @@
 // npm install -g «packageName>
 // sudo install -g <packageName> (mac)
 
+// package.ison - manifest file (stores important info about project/package)'
+// manual approach (create package. json in the root, create properties etc)
+// pm init (step by step, press enter to skip)
+// pm init -y (everything default)

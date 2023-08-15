@@ -22,3 +22,19 @@
 
 - OS module
     - file system에서도 잘 쓰이고 현재 OS 에 대한 정보가 다 담겨 있음.
+
+- http module
+
+- npm
+    
+    ```
+    // npm - global command, comes with node 
+    // npm --version
+    
+    // local dependency - use it only in this particular project 
+    // npm i <packageName>
+    
+    // global dependency - use it in any project
+    // npm install -g «packageName>
+    // sudo install -g <packageName> (mac)
+    ```

@@ -43,3 +43,24 @@
     pm init (step by step, press enter to skip)
     pm init -y (everything default)
     ```
+
+- nodemon
+    
+    ```jsx
+    npm i nodemon -D
+    ```
+    
+- npm에 nodemon 라이브러리를 사용하게 되면 js파일의 내용이 변경될 때마다 이것을 감지하고 서버를 자동으로 restart 시켜주게 됩니다. (html, css 파일 등은 감지 안됨)
+
+- global하게 설치도 가능함.
+    
+    ```jsx
+    npm install -g packageName
+    ```
+    
+
+- package-lock .json에 모든 dependencies에 대한 정보가 들어 있음.
+
+- Event Loop
+    - non-blocking I/O operation이 가능하게 해줌.
+    흔히 **`Node.js`**를 **싱글 스레드 논 블로킹**이라고 한다. **`Node.js`**는 **하나의 스레드**로 동작하지만 I/O 작업이 발생한 경우 이를 **비동기적**으로 처리할 수 있다. 분명 하나의 스레드는 하나의 실행 흐름만을 가지고 있고 **파일 읽기**와 같이 **기다려야 하는 작업**을 실행하면 그 작업이 끝나기 전에는 아무것도 할 수 없어야만 한다. 그러나 **`Node.js`**는 하나의 스레드만으로 여러 **비동기 작업**들을 블로킹 없이 수행할 수 있고 그 기반에는 **이벤트 루프**가 존재한다.

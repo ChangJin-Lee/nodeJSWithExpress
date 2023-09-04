@@ -13,9 +13,13 @@
 // npm init (step by step, press enter to skip)
 // npm init -y (everything default)
 
-const _ = require('lodash')
-const items = [1,2,3,4,5]
+const http = require('http')
 
-console.log("hello world!");
-console.log("change");
-console.log(items);
+const server = http.createServer((req, res) => {
+    console.log('request event');
+    res.end('Hello World')
+})
+
+server.listen(5000, ()=> {
+    console.log('Server listening on port : 5000.....');
+})
